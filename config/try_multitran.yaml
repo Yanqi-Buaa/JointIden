@@ -1,0 +1,19 @@
+# Train parameters 
+batch_size: 160
+learning_rate: 0.001
+num_epochs: 50
+
+# Model parameters
+model_name: "MultiTransformerEncoder"
+input_dim: 4
+model_dim: 32
+num_heads: 4
+num_layers: 3
+trans_output_dim: 10
+n_segments: 1  # new parameter, number of segments/transformers
+num_classes: 4
+
+# Data parameters
+norm_dim: [0,1,2]  # data normalization dimension, different from the original config
+train_data_path: "data/processed/Data_train_multispeed_try_onespeed.pth"
+test_data_path: "data/processed/Data_test_multispeed_try_onespeed.pth"

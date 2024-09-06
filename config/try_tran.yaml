@@ -1,0 +1,15 @@
+# Train parameters 
+batch_size: 160
+learning_rate: 0.001
+num_epochs: 50
+# Model parameters
+model_name: "TransformerEncoder"
+input_dim: 4
+model_dim: 64
+num_heads: 4
+num_layers: 3
+num_classes: 4
+# Data parameters
+norm_dim: [0,1]  
+train_data_path: 'data/processed/Data_train_rig_base.pth'
+test_data_path: 'data/processed/Data_test_rig_base.pth'
